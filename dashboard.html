@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Dashboard | NodTransfer</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#3b2f92">
+<meta name="msapplication-navbutton-color" content="#3b2f92">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#3b2f92">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/averta/averta-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/dasboard.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- left-side -->
+  <div class="left-side-nav-main-root">
+    <div class="left-side-nav">
+      <div class="left-side-nav-inner">
+
+          <div class="nav-logo-section">
+            <a href="home.html" class="dash-logo">
+              <img src="assets/images/logo.svg" class="logo" alt="logo" /> 
+            </a>
+
+            <div class="mobile-menu-div desktop-hidden">
+              <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                <span class="navbar-toggler-icon"> <i class="bg-custom-icon menu-bar-icon"></i> </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="left-side-menu" id="dashboard-menu-clone">
+            <div class="left-side-inner">
+
+              <!--  mobile  -->
+              <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+              <div class="menu-cloned-one desktop-hidden" id="menu-cloned-one">
+                <div class="nav-dashboard-right">
+                  
+                  <!-- *** Add here desktop right part in mobile *** -->
+
+                </div>
+              </div>
+
+              
+              <!--  End of mobile  -->
+
+              <div class="side-nav-item accordion" id="menu-collapse">
+                <ul class="main-listing">
+
+                  <li class="nav-item active">
+                    <a class="nav-link nav-normal" href="#" title="Dashboard">
+                      <span class="icon-span"> <span class="bg-custom-icon home-icon"></span> </span>
+                      <span class="text-collapse-menu">Dashboard </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="Transfer">
+                      <span class="icon-span"> <span class="bg-custom-icon transfer-icon"></span> </span>
+                      <span class="text-collapse-menu">Transfer </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="Invest">
+                      <span class="icon-span"> <span class="bg-custom-icon investment-icon"></span> </span>
+                      <span class="text-collapse-menu">Invest </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="History">
+                      <span class="icon-span"> <span class="bg-custom-icon history-icon"></span> </span>
+                      <span class="text-collapse-menu">History </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="Contacts">
+                      <span class="icon-span"> <span class="bg-custom-icon contacts-icon"></span> </span>
+                      <span class="text-collapse-menu">Contacts </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="Billing">
+                      <span class="icon-span"> <span class="bg-custom-icon atm-cards-icon"></span> </span>
+                      <span class="text-collapse-menu">Billing </span>
+                    </a>
+                  </li>
+
+                </ul>
+
+                <ul class="main-listing main-listing-bottom">
+
+                  <li class="nav-item">
+                    <a class="nav-link nav-normal" href="#" title="Help">
+                      <span class="icon-span"> <span class="bg-custom-icon help-icon"></span> </span>
+                      <span class="text-collapse-menu"> Help </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+                
+            </div>
+          </div>
+          
+          <!--  mobile  -->
+          <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+          <!--  End of mobile  -->
+
+      </div>
+    </div>
+  </div>
+  <!--  End of left-side  -->
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-area-dashboard main-dashboard">
+    <div class="main-middle-area">
+
+      <!--  Header  -->
+      <header class="header header-dashboard">
+        <nav class="navbar navbar-light">
+          <div class="container-fluid d-block">
+              
+            <div class="row col-header-row">
+              <div class="col-lg-12 col-12">
+
+                <div class="nav-dashboard-row">
+
+                  <div class="nav-dashboard-left">
+                    <div class="heading-title-div">
+                      <div class="heading-title-row">
+                        <div class="btn-div"> <button class="menu-btn" id="menu-collpese-open"> <i class="bg-custom-icon menu-bar-icon"></i> </button> </div>
+                        <div class="title-div"> <h5>Dashboard</h5> </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="nav-dashboard-right">
+                    <div class="nav-dash-right-div mobile-hidden">
+                      <ul class="nav-right-list-ul">
+
+                        <li class="list-item notification-item">
+                          <a href="#" class="link-btn-rounded nt-btn-rounded">
+                            <span class="icon-span"> <span class="bg-custom-icon notification-icon"></span> </span>
+                            <span class="text-span"> 8+ </span>
+                          </a>
+                        </li>
+
+                        <li class="list-item profile-item">
+                          <a href="#" class="link-btn-rounded profile-btn-rounded">
+                            <img src="assets/images/profile-img.png" class="img-fluid img-profile" alt="profile" />
+                          </a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          
+          </div>
+        </nav>
+      </header>
+      <!-- End of header -->
+      
+      <!--  main  -->
+      <div class="main-section">
+        <div class="main-div">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+
+                <section class="dashboard-section">
+                  <div class="dashboard-div">
+
+                    <div class="">
+
+                    </div>
+
+                  </div>
+                </section>
+                
+              </div>  
+            </div>        
+          </div>
+        </div>
+      </div><!--  end of main  -->
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+  $(document).ready(function () {
+    
+  });
+</script>
+
+</body>
+</html>
