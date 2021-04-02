@@ -1,1 +1,135 @@
-/* No CSS *//*# sourceMappingURL=dasboard.css.map */
+.dashboard-section {
+  position: relative;
+}
+
+.dashboard-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.dashboard-div .dashboard-left-div {
+  width: 100%;
+  max-width: calc(100% - 332px);
+}
+
+.dashboard-div .dashboard-left-div .dashboard-left-row {
+  padding: 0 var(--padding-70) 0 0;
+}
+
+.dashboard-div .dashboard-right-div {
+  width: 100%;
+  max-width: 332px;
+  position: relative;
+}
+
+.dashboard-div .dashboard-right-div::before {
+  content: "";
+  border: 1px solid #e2e0ef;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  min-height: calc(100vh);
+}
+
+.dashboard-div .dashboard-right-div .dashboard-right-row {
+  padding: 0 0 0 var(--padding-70);
+}
+
+.welcome-card-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: var(--white-color);
+  border: 1px solid var(--primary-colour01-15);
+  border-radius: 15px;
+}
+
+.welcome-card-div::before {
+  content: "";
+  background: url(../images/welcome-illustration-img.svg) no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 15px;
+  bottom: -1px;
+  width: 334px;
+  height: 260px;
+}
+
+.welcome-card-div .welcome-card-left-div {
+  padding: 36px 40px 30px 40px;
+  min-height: 220px;
+  width: calc(100% - 360px);
+}
+
+.welcome-card-div .content-div h4 {
+  font-weight: 800;
+  color: var(--paragraph-colour-typo01);
+  margin: 0 0 12px 0;
+  display: block;
+}
+
+.welcome-card-div .content-div p {
+  max-width: 300px;
+  line-height: 1.25;
+  margin: 0 0 10px 0;
+  color: var(--title-normal-colour-typo01);
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div {
+  padding: 30px 0 10px 0;
+  margin: 0;
+  position: relative;
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div p {
+  color: var(--paragraph-colour-typo01);
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div p .rounded-span {
+  height: 18px;
+  width: 18px;
+  background: #feebb4;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #fff7e1;
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div p .rounded-span .span {
+  height: 8px;
+  width: 8px;
+  border-radius: 100px;
+  background: #fdd769;
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div p .text-span {
+  width: calc(100% - 18px);
+  padding: 0 0 0 10px;
+}
+
+.welcome-card-div .content-div .acc-limite-bottom-div p .link {
+  color: var(--primary-colour02);
+}
+/*# sourceMappingURL=dasboard.css.map */

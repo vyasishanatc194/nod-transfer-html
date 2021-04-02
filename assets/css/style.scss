@@ -32,6 +32,8 @@
   --warning-state-colour-15: #fff9e9;
   --success-state-colour-10: #eaf9f0;
   --error-state-colour-10: #ffeeee;
+
+  --padding-70: 70px;
 }
 /* End of Colors */
 
@@ -788,16 +790,8 @@ p {
 }
 
 @media (min-width: 1025px) and (max-width: 1490px) {
-  .middle-area-dashboard {
-    padding: 0 18px 0 310px;
-  }
-
   .container {
     max-width: 1200px;
-  }
-
-  .nav-dashboard-right {
-    max-width: 60%;
   }
 }
 
@@ -820,13 +814,13 @@ p {
 
   /**  main area  */
   .middle-area-dashboard {
-    padding: 70px 0 0 0;
+    padding: var(--padding-70) 0 0 0;
     margin: 0;
 
     .main-middle-area {
       padding: 0;
       margin: 0;
-      min-height: calc(100vh - 70px);
+      min-height: calc(100vh - var(--padding-70));
       width: 100%;
     }
   }
@@ -888,7 +882,7 @@ p {
 
   /**  main area  */
   .middle-area-dashboard {
-    padding: 70px 0 0 0;
+    padding: var(--padding-70) 0 0 0;
     margin: 0;
 
     .main-middle-area {
