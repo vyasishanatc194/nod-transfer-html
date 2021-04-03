@@ -23,11 +23,27 @@
 
     &::before {
       content: "";
-      border: 1px solid #e2e0ef;
+      border-left: 1px solid var(--primary-colour01-15);
       position: fixed;
       top: 0;
       height: 100%;
       min-height: calc(100vh);
+      animation-name: animation-before-line;
+      animation-duration: 2s;
+    }
+
+    @keyframes animation-before-line {
+      0% {
+        height: 0;
+        opacity: 0;
+        top: -100%;
+      }
+
+      100% {
+        height: 100%;
+        opacity: 1;
+        top: 0;
+      }
     }
 
     .dashboard-right-row {
@@ -38,7 +54,7 @@
 
 .welcome-card-div {
   padding: 0;
-  margin: 0;
+  margin: 0 0 45px 0;
   position: relative;
   background: var(--white-color);
   border: 1px solid var(--primary-colour01-15);
@@ -53,12 +69,26 @@
     bottom: -1px;
     width: 334px;
     height: 260px;
+    animation-name: animation-before-illustration;
+    animation-duration: 2s;
+  }
+
+  @keyframes animation-before-illustration {
+    0% {
+      transform: scale(0.8);
+      transform-origin: bottom center;
+    }
+
+    100% {
+      transform: scale(1);
+      transform-origin: bottom center;
+    }
   }
 
   .welcome-card-left-div {
     padding: 36px 40px 30px 40px;
     min-height: 220px;
-    width: calc(100% - 360px);
+    position: relative;
   }
 
   .content-div {
@@ -121,8 +151,574 @@
   }
 }
 
+.nicon-bx-card-root {
+  .nicon-bx-card-row {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  .dnumber-card-bx-div {
+    padding: 24px 27px 21px 27px;
+    margin: 0 0 20px 0;
+    position: relative;
+    background: var(--primary-colour02-10);
+    border-radius: 15px;
+
+    .icon-div {
+      padding: 0;
+      margin: 0 0 23px 0;
+      position: relative;
+
+      .icon-rounded-box {
+        background: var(--primary-colour02);
+        border-radius: 15px;
+        height: 44px;
+        width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .transfer-icon {
+          width: 18px;
+          height: 18px;
+        }
+
+        .investment-icon {
+          width: 18px;
+          height: 20px;
+        }
+
+        .contacts-icon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .text-content-div {
+      h5 {
+        line-height: 25px;
+        color: var(--paragraph-colour-typo01);
+        font-weight: 600;
+        margin: 0 0 5px 0;
+        word-break: break-word;
+      }
+
+      p {
+        line-height: 14px;
+        color: var(--title-normal-colour-typo01);
+        word-break: break-word;
+      }
+    }
+
+    &.card-primary2 {
+      background: var(--primary-colour02-10);
+
+      .icon-div {
+        .icon-rounded-box {
+          background: var(--primary-colour02);
+        }
+      }
+    }
+
+    &.card-primary3 {
+      background: var(--primary-colour03-10);
+
+      .icon-div {
+        .icon-rounded-box {
+          background: var(--primary-colour03);
+        }
+      }
+    }
+
+    &.card-primary1 {
+      background: var(--primary-colour01-10);
+
+      .icon-div {
+        .icon-rounded-box {
+          background: var(--primary-colour01);
+        }
+      }
+    }
+  }
+}
+
+.trans-table-root {
+  .trans-table-row {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .trans-top-header {
+      padding: 0;
+      margin: 0 0 13px 0;
+      position: relative;
+
+      .trans-top-header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h6 {
+          line-height: 25px;
+        }
+      }
+    }
+
+    .trans-table-main-div {
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      .table.table-borderless {
+        td,
+        th {
+          padding: 12px 0;
+          border-top: none;
+        }
+
+        .width-40 {
+          width: 40%;
+        }
+
+        .width-30 {
+          width: 30%;
+        }
+
+        .width-15 {
+          width: 15%;
+        }
+
+        .label-custom-div {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-right-pt {
+  padding-top: 24px;
+}
+
+.my-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+
+  .my-cards-main-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .my-cards-bx-common {
+    padding: 25px 23px;
+    margin: 0;
+    position: relative;
+    background: var(--primary-colour01);
+    border-radius: 15px;
+    min-height: 155px;
+
+    .my-cards-bx-top-common {
+      margin: 0 0 40px 0;
+
+      .img-div {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .my-cards-bx-body-common {
+      h6 {
+        color: var(--white-color);
+        line-height: 21px;
+        font-weight: 600;
+        margin: 0 0 4px 0;
+      }
+
+      p {
+        color: var(--white-color);
+        line-height: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.loan-reward-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+
+  .loan-reward-main-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .loan-reward-bx-common {
+    padding: 29px 29px 22px 28px;
+    margin: 0;
+    position: relative;
+    background: var(--primary-colour01-5);
+    border-radius: 15px;
+    min-height: 144px;
+
+    .progress-width {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: 15px;
+      background: var(--primary-colour01-15);
+      transition: width 0.8s;
+      will-change: width;
+    }
+
+    .loan-reward-bx-body-common {
+      position: relative;
+
+      h6 {
+        line-height: 22px;
+        margin: 0 0 16px 0;
+
+        .text-400 {
+          font-weight: 400;
+        }
+      }
+
+      p {
+        line-height: 18px;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.trans-limit-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+
+  .trans-limit-main-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .common-top-header {
+    margin: 0;
+
+    .common-top-header-row {
+      h6 {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .tooltip-link {
+          display: flex;
+          align-items: center;
+
+          .help-icon {
+            width: 16px;
+            height: 16px;
+            margin: 0 0 4px 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .trans-limit-bx-common {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .trans-limit-bx-row {
+      padding: 17px 0 17px 0;
+      margin: 0;
+      position: relative;
+      border-bottom: 1px solid var(--primary-colour01-15);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .trans-limit-bx-top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 0 9px 0;
+
+        h6 {
+          font-size: 15px;
+          line-height: 19px;
+          color: var(--paragraph-colour-typo01);
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 17px;
+
+          .highlight-span {
+            font-weight: 700;
+            color: var(--primary-colour02);
+          }
+
+          .bold-span {
+            font-weight: 700;
+          }
+        }
+
+        .progress-root-div {
+          width: 100%;
+          margin: 7px 0 0 0;
+
+          .progress-custom {
+            background: var(--primary-colour02-10);
+            border-radius: 15px;
+            height: 7px;
+
+            .progress-bar {
+              background: var(--primary-colour02);
+              border-radius: 15px;
+              position: relative;
+
+              &::before {
+                content: "";
+                position: absolute;
+                right: 2px;
+                height: 3px;
+                width: 3px;
+                display: inline-block;
+                background: var(--white-color);
+                border-radius: 100px;
+              }
+            }
+          }
+        }
+      }
+
+      .trans-limit-bx-bottom-row {
+        .text-content-div {
+          p {
+            color: var(--title-normal-colour-typo01);
+            line-height: 18px;
+            margin: 0 0 1px 0;
+          }
+
+          .link {
+            color: var(--primary-colour02);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
+  .dashboard-div {
+    .dashboard-left-div {
+      max-width: 100%;
+
+      .dashboard-left-row {
+        padding: 0;
+      }
+    }
+
+    .dashboard-right-div {
+      max-width: 100%;
+
+      &::before {
+        display: none;
+      }
+
+      .dashboard-right-row {
+        padding: 0;
+      }
+    }
+  }
+
+  .welcome-card-div {
+    &::before {
+      right: 10px;
+      width: 104px;
+      height: 80px;
+    }
+
+    .welcome-card-left-div {
+      padding: 25px 15px 45px 15px;
+      min-height: 195px;
+    }
+
+    .content-div {
+      h4 {
+        font-size: 20px;
+      }
+
+      .acc-limite-bottom-div {
+        padding: 15px 0 10px 0;
+
+        p {
+          font-size: 12px;
+
+          .rounded-span {
+            transform: scale(0.8);
+          }
+
+          .text-span {
+            padding: 0 0 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .trans-table-root {
+    .trans-table-row {
+      .trans-table-main-div {
+        .table.table-borderless {
+          .width-30 {
+            min-width: 140px;
+          }
+
+          .width-15 {
+            min-width: 70px;
+          }
+
+          .regular-p18 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .nicon-bx-card-root {
+    .dnumber-card-bx-div {
+      padding: 20px 15px 20px 15px;
+    }
+  }
+
+  .my-cards-root {
+    .my-cards-bx-common {
+      padding: 20px 15px;
+      min-height: 145px;
+    }
+  }
+
+  .loan-reward-cards-root {
+    .loan-reward-bx-common {
+      padding: 25px 20px 20px 15px;
+      min-height: 125px;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-div {
+    .dashboard-left-div {
+      max-width: 100%;
+
+      .dashboard-left-row {
+        padding: 0;
+      }
+    }
+
+    .dashboard-right-div {
+      max-width: 100%;
+
+      &::before {
+        display: none;
+      }
+
+      .dashboard-right-row {
+        padding: 0;
+      }
+    }
+  }
+
+  .welcome-card-div {
+    &::before {
+      right: 15px;
+      width: 244px;
+      height: 190px;
+    }
+
+    .welcome-card-left-div {
+      padding: 25px 15px 25px 15px;
+      min-height: 175px;
+    }
+
+    .content-div {
+      h4 {
+        font-size: 20px;
+      }
+
+      .acc-limite-bottom-div {
+        padding: 15px 0 10px 0;
+
+        p {
+          font-size: 12px;
+
+          .rounded-span {
+            transform: scale(0.8);
+          }
+
+          .text-span {
+            padding: 0 0 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .trans-table-root {
+    .trans-table-row {
+      .trans-table-main-div {
+        .table.table-borderless {
+          .width-30 {
+            min-width: 140px;
+          }
+
+          .width-15 {
+            min-width: 70px;
+          }
+
+          .regular-p18 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .nicon-bx-card-root {
+    .dnumber-card-bx-div {
+      padding: 20px 15px 20px 15px;
+    }
+  }
+
+  .my-cards-root {
+    .my-cards-bx-common {
+      padding: 20px 15px;
+      min-height: 145px;
+    }
+  }
+
+  .loan-reward-cards-root {
+    .loan-reward-bx-common {
+      padding: 25px 20px 20px 15px;
+      min-height: 125px;
+    }
+  }
 }

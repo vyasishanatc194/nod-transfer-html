@@ -28,11 +28,41 @@
 
 .dashboard-div .dashboard-right-div::before {
   content: "";
-  border: 1px solid #e2e0ef;
+  border-left: 1px solid var(--primary-colour01-15);
   position: fixed;
   top: 0;
   height: 100%;
   min-height: calc(100vh);
+  -webkit-animation-name: animation-before-line;
+          animation-name: animation-before-line;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes animation-before-line {
+  0% {
+    height: 0;
+    opacity: 0;
+    top: -100%;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes animation-before-line {
+  0% {
+    height: 0;
+    opacity: 0;
+    top: -100%;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .dashboard-div .dashboard-right-div .dashboard-right-row {
@@ -41,7 +71,7 @@
 
 .welcome-card-div {
   padding: 0;
-  margin: 0;
+  margin: 0 0 45px 0;
   position: relative;
   background: var(--white-color);
   border: 1px solid var(--primary-colour01-15);
@@ -57,12 +87,46 @@
   bottom: -1px;
   width: 334px;
   height: 260px;
+  -webkit-animation-name: animation-before-illustration;
+          animation-name: animation-before-illustration;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes animation-before-illustration {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@keyframes animation-before-illustration {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
 }
 
 .welcome-card-div .welcome-card-left-div {
   padding: 36px 40px 30px 40px;
   min-height: 220px;
-  width: calc(100% - 360px);
+  position: relative;
 }
 
 .welcome-card-div .content-div h4 {
@@ -131,5 +195,519 @@
 
 .welcome-card-div .content-div .acc-limite-bottom-div p .link {
   color: var(--primary-colour02);
+}
+
+.nicon-bx-card-root .nicon-bx-card-row {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div {
+  padding: 24px 27px 21px 27px;
+  margin: 0 0 20px 0;
+  position: relative;
+  background: var(--primary-colour02-10);
+  border-radius: 15px;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .icon-div {
+  padding: 0;
+  margin: 0 0 23px 0;
+  position: relative;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .icon-div .icon-rounded-box {
+  background: var(--primary-colour02);
+  border-radius: 15px;
+  height: 44px;
+  width: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .icon-div .icon-rounded-box .transfer-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .icon-div .icon-rounded-box .investment-icon {
+  width: 18px;
+  height: 20px;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .icon-div .icon-rounded-box .contacts-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .text-content-div h5 {
+  line-height: 25px;
+  color: var(--paragraph-colour-typo01);
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  word-break: break-word;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div .text-content-div p {
+  line-height: 14px;
+  color: var(--title-normal-colour-typo01);
+  word-break: break-word;
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary2 {
+  background: var(--primary-colour02-10);
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary2 .icon-div .icon-rounded-box {
+  background: var(--primary-colour02);
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary3 {
+  background: var(--primary-colour03-10);
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary3 .icon-div .icon-rounded-box {
+  background: var(--primary-colour03);
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary1 {
+  background: var(--primary-colour01-10);
+}
+
+.nicon-bx-card-root .dnumber-card-bx-div.card-primary1 .icon-div .icon-rounded-box {
+  background: var(--primary-colour01);
+}
+
+.trans-table-root .trans-table-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.trans-table-root .trans-table-row .trans-top-header {
+  padding: 0;
+  margin: 0 0 13px 0;
+  position: relative;
+}
+
+.trans-table-root .trans-table-row .trans-top-header .trans-top-header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trans-table-root .trans-table-row .trans-top-header .trans-top-header-row h6 {
+  line-height: 25px;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless td,
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless th {
+  padding: 12px 0;
+  border-top: none;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-40 {
+  width: 40%;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-30 {
+  width: 30%;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-15 {
+  width: 15%;
+}
+
+.trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .label-custom-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dashboard-right-pt {
+  padding-top: 24px;
+}
+
+.my-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+}
+
+.my-cards-root .my-cards-main-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.my-cards-root .my-cards-bx-common {
+  padding: 25px 23px;
+  margin: 0;
+  position: relative;
+  background: var(--primary-colour01);
+  border-radius: 15px;
+  min-height: 155px;
+}
+
+.my-cards-root .my-cards-bx-common .my-cards-bx-top-common {
+  margin: 0 0 40px 0;
+}
+
+.my-cards-root .my-cards-bx-common .my-cards-bx-top-common .img-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.my-cards-root .my-cards-bx-common .my-cards-bx-body-common h6 {
+  color: var(--white-color);
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.my-cards-root .my-cards-bx-common .my-cards-bx-body-common p {
+  color: var(--white-color);
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.loan-reward-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+}
+
+.loan-reward-cards-root .loan-reward-main-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common {
+  padding: 29px 29px 22px 28px;
+  margin: 0;
+  position: relative;
+  background: var(--primary-colour01-5);
+  border-radius: 15px;
+  min-height: 144px;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .progress-width {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 15px;
+  background: var(--primary-colour01-15);
+  -webkit-transition: width 0.8s;
+  transition: width 0.8s;
+  will-change: width;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .loan-reward-bx-body-common {
+  position: relative;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .loan-reward-bx-body-common h6 {
+  line-height: 22px;
+  margin: 0 0 16px 0;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .loan-reward-bx-body-common h6 .text-400 {
+  font-weight: 400;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .loan-reward-bx-body-common p {
+  line-height: 18px;
+}
+
+.loan-reward-cards-root .loan-reward-bx-common .loan-reward-bx-body-common p b {
+  font-weight: 700;
+}
+
+.trans-limit-cards-root {
+  padding: 0;
+  margin: 0 0 48px 0;
+  position: relative;
+}
+
+.trans-limit-cards-root .trans-limit-main-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.trans-limit-cards-root .common-top-header {
+  margin: 0;
+}
+
+.trans-limit-cards-root .common-top-header .common-top-header-row h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trans-limit-cards-root .common-top-header .common-top-header-row h6 .tooltip-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trans-limit-cards-root .common-top-header .common-top-header-row h6 .tooltip-link .help-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 4px 8px;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row {
+  padding: 17px 0 17px 0;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid var(--primary-colour01-15);
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row:last-child {
+  border-bottom: none;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0 9px 0;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row h6 {
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--paragraph-colour-typo01);
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row p .highlight-span {
+  font-weight: 700;
+  color: var(--primary-colour02);
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row p .bold-span {
+  font-weight: 700;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row .progress-root-div {
+  width: 100%;
+  margin: 7px 0 0 0;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row .progress-root-div .progress-custom {
+  background: var(--primary-colour02-10);
+  border-radius: 15px;
+  height: 7px;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row .progress-root-div .progress-custom .progress-bar {
+  background: var(--primary-colour02);
+  border-radius: 15px;
+  position: relative;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-top-row .progress-root-div .progress-custom .progress-bar::before {
+  content: "";
+  position: absolute;
+  right: 2px;
+  height: 3px;
+  width: 3px;
+  display: inline-block;
+  background: var(--white-color);
+  border-radius: 100px;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-bottom-row .text-content-div p {
+  color: var(--title-normal-colour-typo01);
+  line-height: 18px;
+  margin: 0 0 1px 0;
+}
+
+.trans-limit-cards-root .trans-limit-bx-common .trans-limit-bx-row .trans-limit-bx-bottom-row .text-content-div .link {
+  color: var(--primary-colour02);
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .dashboard-div .dashboard-left-div {
+    max-width: 100%;
+  }
+  .dashboard-div .dashboard-left-div .dashboard-left-row {
+    padding: 0;
+  }
+  .dashboard-div .dashboard-right-div {
+    max-width: 100%;
+  }
+  .dashboard-div .dashboard-right-div::before {
+    display: none;
+  }
+  .dashboard-div .dashboard-right-div .dashboard-right-row {
+    padding: 0;
+  }
+  .welcome-card-div::before {
+    right: 10px;
+    width: 104px;
+    height: 80px;
+  }
+  .welcome-card-div .welcome-card-left-div {
+    padding: 25px 15px 45px 15px;
+    min-height: 195px;
+  }
+  .welcome-card-div .content-div h4 {
+    font-size: 20px;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div {
+    padding: 15px 0 10px 0;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p {
+    font-size: 12px;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p .rounded-span {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p .text-span {
+    padding: 0 0 0 5px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-30 {
+    min-width: 140px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-15 {
+    min-width: 70px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .regular-p18 {
+    font-size: 12px;
+  }
+  .nicon-bx-card-root .dnumber-card-bx-div {
+    padding: 20px 15px 20px 15px;
+  }
+  .my-cards-root .my-cards-bx-common {
+    padding: 20px 15px;
+    min-height: 145px;
+  }
+  .loan-reward-cards-root .loan-reward-bx-common {
+    padding: 25px 20px 20px 15px;
+    min-height: 125px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .dashboard-div .dashboard-left-div {
+    max-width: 100%;
+  }
+  .dashboard-div .dashboard-left-div .dashboard-left-row {
+    padding: 0;
+  }
+  .dashboard-div .dashboard-right-div {
+    max-width: 100%;
+  }
+  .dashboard-div .dashboard-right-div::before {
+    display: none;
+  }
+  .dashboard-div .dashboard-right-div .dashboard-right-row {
+    padding: 0;
+  }
+  .welcome-card-div::before {
+    right: 15px;
+    width: 244px;
+    height: 190px;
+  }
+  .welcome-card-div .welcome-card-left-div {
+    padding: 25px 15px 25px 15px;
+    min-height: 175px;
+  }
+  .welcome-card-div .content-div h4 {
+    font-size: 20px;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div {
+    padding: 15px 0 10px 0;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p {
+    font-size: 12px;
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p .rounded-span {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .welcome-card-div .content-div .acc-limite-bottom-div p .text-span {
+    padding: 0 0 0 5px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-30 {
+    min-width: 140px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .width-15 {
+    min-width: 70px;
+  }
+  .trans-table-root .trans-table-row .trans-table-main-div .table.table-borderless .regular-p18 {
+    font-size: 12px;
+  }
+  .nicon-bx-card-root .dnumber-card-bx-div {
+    padding: 20px 15px 20px 15px;
+  }
+  .my-cards-root .my-cards-bx-common {
+    padding: 20px 15px;
+    min-height: 145px;
+  }
+  .loan-reward-cards-root .loan-reward-bx-common {
+    padding: 25px 20px 20px 15px;
+    min-height: 125px;
+  }
 }
 /*# sourceMappingURL=dasboard.css.map */

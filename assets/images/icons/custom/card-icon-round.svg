@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="24px" viewBox="0 0 41 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>card-icon-round</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="card-icon-round" fill-rule="nonzero">
+            <ellipse id="Oval" fill="#E2E0EF" cx="29.2578" cy="12" rx="11.3906" ry="12"></ellipse>
+            <ellipse id="Oval" fill="#FFFFFF" cx="12.1719" cy="12" rx="11.3906" ry="12"></ellipse>
+        </g>
+    </g>
+</svg>
