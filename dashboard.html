@@ -121,7 +121,7 @@
   <!--  End of left-side  -->
 
   <!-- Begin page content -->
-  <main role="main" class="middle-area-dashboard main-dashboard">
+  <main role="main" class="middle-area-dashboard main-dashboard" id="main-dashboard">
     <div class="main-middle-area">
 
       <!--  Header  -->
@@ -558,7 +558,10 @@
 
 <script>
   $(document).ready(function () {
-    
+    $("#menu-collpese-open").click(function(){
+      $(".left-side-nav-main-root").toggleClass("active");
+      $("#main-dashboard").toggleClass("active");
+    });
   });
 </script>
 
