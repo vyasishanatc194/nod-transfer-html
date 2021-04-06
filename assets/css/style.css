@@ -1296,6 +1296,12 @@ p {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 2000px) and (min-height: 500px) and (max-height: 750px) {
+  .left-side-nav .left-side-menu .left-side-inner .side-nav-item .main-listing-bottom {
+    padding-top: calc(100vh - 583px);
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1490px) {
   .container {
     max-width: 1200px;
